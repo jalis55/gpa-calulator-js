@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA CALCULATOR</title>
+    <style>
+        .heading{
+            color: royalblue;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .form div input{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>GPA CALCULATOR</h1>
+    </div>
+    <div class="form">
+        <form action=""style="white-space: pre;">
+            <div >
+                <label>English <input type="text" id="en"></label>
+                <label>Bangla <input type="text" id="bn" step="1"></label>
+                <label>Math <input type="text" id="ma"></label>
+                <label>Physics <input type="text" id="ph"></label>
+                <label>Chemistry <input type="text" id="ch"></label>
+                <label>Biology <input type="text" id="bi"></label>
+                <input type="submit" value="caluclate" onclick="calculate_result();">
+
+
+            </div>
+            <div id="show_result">
+
+            </div>
+
+        </form>
+
+    </div>
+    <script src="scripts.js"></script> 
+</body>
+</html>
