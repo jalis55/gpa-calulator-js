@@ -57,10 +57,7 @@ function calculate_result(){
     for(var i=0;i<final_result.length;i++){
         sum +=final_result[i];
     }
-    console.log(sum/5);
-    document.getElementById("show_result").innerHTML="<h1>some thing you want</h1>";
-
-
-    
-
+    var cgpa=sum/5;
+    document.getElementById("show_result").innerHTML="<h1> Your CGPA IS:"+cgpa+"</h1>";
+    document.getElementsById("A+").style.color = "blue";
 };

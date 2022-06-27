@@ -12,35 +12,61 @@
             justify-content: center;
             display: flex;
         }
-        .form div input{
-            
-        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            } 
+
+
     </style>
 </head>
 <body>
     <div class="heading">
         <h1>GPA CALCULATOR</h1>
     </div>
-    <div class="form">
-        <form action=""style="white-space: pre;">
+
+     
             <div >
-                <label>English <input type="text" id="en"></label>
-                <label>Bangla <input type="text" id="bn" step="1"></label>
-                <label>Math <input type="text" id="ma"></label>
-                <label>Physics <input type="text" id="ph"></label>
-                <label>Chemistry <input type="text" id="ch"></label>
-                <label>Biology <input type="text" id="bi"></label>
-                <input type="submit" value="caluclate" onclick="calculate_result();">
+                <label>English <input type="text" id="en"></label><br>
+                <label>Bangla <input type="text" id="bn" step="1"></label><br>
+                <label>Math <input type="text" id="ma"></label><br>
+                <label>Physics <input type="text" id="ph"></label><br>
+                <label>Chemistry <input type="text" id="ch"></label><br>
+                <label>Biology <input type="text" id="bi"></label><br>
+                <button onclick="calculate_result();">Calculate</button><br>
 
 
             </div>
-            <div id="show_result">
 
-            </div>
+
 
         </form>
+        <div id="show_result">
 
-    </div>
+        </div>
+
+    <div class="box">
+        <h1 id="A+">A+</h1>
+    </div> 
+    <div class="box">
+        <h1 id="A">A</h1>
+    </div> 
+    <div class="box">
+        <h1 id="A-">A-</h1>
+    </div> 
+    <div class="box">
+        <h1 id="B">B</h1>
+    </div> 
+    <div class="box">
+        <h1 id="C">C</h1>
+    </div> 
+    <div class="box">
+        <h1 id="D">D</h1>
+    </div> 
+    <div class="box">
+        <h1 id="F">F</h1>
+    </div> 
     <script src="scripts.js"></script> 
 </body>
 </html>
