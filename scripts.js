@@ -22,8 +22,38 @@ function calculate_garade(marks){
         return 0;
     }
 };
-// console.log(calculate_garade(44));
 
+//Final cgpa
+function final_cgpa(cgpa){
+    if (cgpa >=5){
+        return "A+";
+    }
+    if (cgpa>=4 && cgpa <5 ){
+        return "A";
+    }
+    if (cgpa >=3.5 && cgpa <4){
+        return "A-";
+    }
+    if (cgpa >=3 && cgpa<3.5){
+        return "B";
+    }
+    if (cgpa =>2 && cgpa<3){
+        return "C"
+    }
+    if (cgpa =>1 && cgpa<2){
+        return "D"
+    }
+    if (cgpa <1){
+        return "F"
+    }
+}
+// console.log(calculate_garade(44));
+//show result
+function show_result(grade){
+    var output_result=document.getElementById(grade);
+    output_result.style.color="red";
+    output_result.style.background="blue"
+}
 function calculate_result(){
     //type conversion
     var english=parseInt(document.getElementById("en").value);
@@ -50,7 +80,7 @@ function calculate_result(){
 
     //use  typeof to check data type.  
     //console.log(typeof bangla);
-    console.log(final_result);
+    // console.log(final_result);
 
     //use loop
     var sum=0;
@@ -58,6 +88,7 @@ function calculate_result(){
         sum +=final_result[i];
     }
     var cgpa=sum/5;
-    document.getElementById("show_result").innerHTML="<h1> Your CGPA IS:"+cgpa+"</h1>";
-    document.getElementsById("A+").style.color = "blue";
+    var final_garde=final_cgpa(cgpa);
+    show_result(final_garde);
+
 };
