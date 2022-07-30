@@ -88,6 +88,7 @@ function calculate_result(){
         sum +=final_result[i];
     }
     var cgpa=sum/5;
+    console.log(cgpa);
     var final_garde=final_cgpa(cgpa);
     show_result(final_garde);
 
